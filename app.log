@@ -1,0 +1,157 @@
+2024-10-16 09:36:12.305 | INFO     | __main__:<module>:43 - Starting the application
+2024-10-16 09:36:14.021 | INFO     | __main__:generate_image:20 - Generating image with prompt: a car
+2024-10-16 09:36:22.492 | WARNING  | __main__:generate_image:30 - Failed to generate image
+2024-10-16 09:37:16.766 | INFO     | __main__:generate_image:20 - Generating image with prompt: a car
+2024-10-16 09:37:25.547 | WARNING  | __main__:generate_image:30 - Failed to generate image
+2024-10-16 09:38:00.941 | INFO     | __main__:generate_image:20 - Generating image with prompt: a car
+2024-10-16 09:38:23.574 | WARNING  | __main__:generate_image:30 - Failed to generate image
+2024-10-16 09:39:45.417 | INFO     | __main__:<module>:43 - Starting the application
+2024-10-16 09:39:49.106 | INFO     | __main__:generate_image:19 - Received request to generate image with prompt: a car
+2024-10-16 09:39:49.106 | DEBUG    | __main__:generate_image:21 - Input data: {'prompt': 'a car', 'prompt_upsampling': True}
+2024-10-16 09:39:49.107 | INFO     | __main__:generate_image:22 - Generating image with prompt: a car
+2024-10-16 09:39:56.344 | INFO     | __main__:generate_image:27 - Image generated successfully. Output URL: https://replicate.delivery/czjl/QcyNjJARsvoaKRAhVd0fkI8RAJPEvyMluWF5efwa7VCZeHdOB/output.webp
+2024-10-16 09:39:56.345 | DEBUG    | __main__:generate_image:28 - Full output: https://replicate.delivery/czjl/QcyNjJARsvoaKRAhVd0fkI8RAJPEvyMluWF5efwa7VCZeHdOB/output.webp
+2024-10-16 09:41:04.894 | INFO     | __main__:generate_image:19 - Received request to generate image with prompt: a car
+2024-10-16 09:41:04.896 | DEBUG    | __main__:generate_image:21 - Input data: {'prompt': 'a car', 'prompt_upsampling': True}
+2024-10-16 09:41:04.896 | INFO     | __main__:generate_image:22 - Generating image with prompt: a car
+2024-10-16 09:41:14.268 | INFO     | __main__:generate_image:27 - Image generated successfully. Output URL: https://replicate.delivery/czjl/ZTHyACyhZIJAF900xJCMAk4J2FnIfIEduqRY20Ve1syaASnTA/output.webp
+2024-10-16 09:41:14.269 | DEBUG    | __main__:generate_image:28 - Full output: https://replicate.delivery/czjl/ZTHyACyhZIJAF900xJCMAk4J2FnIfIEduqRY20Ve1syaASnTA/output.webp
+2024-10-16 09:42:27.666 | INFO     | __main__:<module>:53 - Starting the application
+2024-10-16 09:42:35.128 | INFO     | __main__:generate_image:20 - Received request to generate image with prompt: a car
+2024-10-16 09:42:35.129 | DEBUG    | __main__:generate_image:22 - Input data: {'prompt': 'a car', 'prompt_upsampling': True}
+2024-10-16 09:42:35.130 | INFO     | __main__:generate_image:23 - Generating image with prompt: a car
+2024-10-16 09:42:45.016 | INFO     | __main__:generate_image:28 - Image generated successfully. Output URL: https://replicate.delivery/czjl/aUTV46fXaZVIE6hykeeUebJLBkfsElI7EYo3ZuoASaxnOQ6cC/output.webp
+2024-10-16 09:42:45.019 | DEBUG    | __main__:generate_image:29 - Full output: https://replicate.delivery/czjl/aUTV46fXaZVIE6hykeeUebJLBkfsElI7EYo3ZuoASaxnOQ6cC/output.webp
+2024-10-16 09:42:45.019 | ERROR    | __main__:generate_image:36 - Unexpected output type: <class 'replicate.helpers.FileOutput'>
+2024-10-16 09:42:45.020 | ERROR    | __main__:generate_image:42 - Error generating image: 500: Unexpected output type
+2024-10-16 09:42:45.020 | ERROR    | __main__:generate_image:43 - Full traceback:
+Traceback (most recent call last):
+
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/main.py", line 54, in <module>
+    return {"message": "Welcome to the Flux image generation API"}
+
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x111730ae0>
+    └ <uvicorn.server.Server object at 0x1133dac60>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x111730b80>
+           │       │   └ <uvicorn.server.Server object at 0x1133dac60>
+           │       └ <function run at 0x10575bd80>
+           └ <module 'asyncio' from '/opt/anaconda3/lib/python3.12/asyncio/__init__.py'>
+  File "/opt/anaconda3/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x1133f91c0>
+           │      └ <function Runner.run at 0x10691bd80>
+           └ <asyncio.runners.Runner object at 0x113242d20>
+  File "/opt/anaconda3/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at /Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-...
+           │    │     └ <cyfunction Loop.run_until_complete at 0x11353d560>
+           │    └ <uvloop.Loop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x113242d20>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 401, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x1133db380>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db230>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x107a7e420>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x1133db380>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db230>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db230>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x1133db4a0>
+          └ <fastapi.applications.FastAPI object at 0x107a7e420>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x113618540>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x1133db1a0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x1133db4a0>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x113618540>
+          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x1135db260>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x1133d98e0>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x1133db1a0>
+          └ <function wrap_app_handling_exceptions at 0x111536340>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x113618680>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x1133d98e0>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x113618680>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x1133d98e0>>
+          └ <fastapi.routing.APIRouter object at 0x1133d98e0>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x113618680>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x1115377e0>
+          └ APIRoute(path='/generate', name='generate_image', methods=['POST'])
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x113618680>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x1133ea200>
+          └ APIRoute(path='/generate', name='generate_image', methods=['POST'])
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x113618680>
+          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x1135db380>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x113618720>
+          └ <function wrap_app_handling_exceptions at 0x111536340>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x113618860>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x1135db2...
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x113618720>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x1135db380>
+                     └ <function get_request_handler.<locals>.app at 0x1133ea160>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x111535bc0>
+  File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'input_data': ImageInput(prompt='a car', prompt_upsampling=True)}
+                 │         └ <function generate_image at 0x1133e9d00>
+                 └ Dependant(path_params=[], query_params=[], header_params=[], cookie_params=[], body_params=[ModelField(field_info=Body(Pydant...
+
+> File "/Users/cyprian/Documents/1 Projects/resume-ai-projects/replicate-streamlit-fastapi/main.py", line 37, in generate_image
+    logger.error(f"Unexpected output type: {type(output)}")
+    │      │                                     └ <replicate.helpers.FileOutput object at 0x111770530>
+    │      └ <function Logger.error at 0x1133e8c20>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='app.log')]>
+
+fastapi.exceptions.HTTPException: 500: Unexpected output type
+2024-10-16 09:43:52.220 | INFO     | __main__:<module>:38 - Starting the application
+2024-10-16 09:44:41.664 | INFO     | __main__:<module>:38 - Starting the application
+2024-10-16 09:45:31.775 | INFO     | __main__:<module>:42 - Starting the application
+2024-10-16 09:50:40.751 | INFO     | __main__:<module>:42 - Starting the application

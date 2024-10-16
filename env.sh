@@ -1,0 +1,1 @@
+export REPLICATE_API_TOKEN=<paste-your-token-here>
